@@ -1,0 +1,13 @@
+# Node modules
+node_modules/
+
+# Editor directories
+.vscode/
+.idea/
+
+# Prettier configuration files
+.prettierrc
+.prettierignore
+
+# Local Prettier cache
+.prettiercache
