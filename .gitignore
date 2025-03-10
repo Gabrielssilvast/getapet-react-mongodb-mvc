@@ -8,6 +8,4 @@ node_modules/
 # Prettier configuration files
 .prettierrc
 .prettierignore
-
-# Local Prettier cache
 .prettiercache

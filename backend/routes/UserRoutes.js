@@ -1,20 +1,20 @@
-const router = require("express").Router();
+const router = require('express').Router()
 
-const UserController = require("../controllers/UserController");
+const UserController = require('../controllers/UserController')
 
 //middleware
-const verifyToken = require("../helpers/verifyToken");
-const { imageUpload } = require("../helpers/imageUpload");
+const verifyToken = require('../helpers/verifyToken')
+const { imageUpload } = require('../helpers/imageUpload')
 
-router.post("/register", UserController.register);
-router.post("/login", UserController.login);
-router.get("/checkuser", UserController.checkUser);
-router.get("/:id", UserController.getUserById);
+router.post('/register', UserController.register)
+router.post('/login', UserController.login)
+router.get('/checkuser', UserController.checkUser)
+router.get('/:id', UserController.getUserById)
 router.patch(
-  "/edit/:id",
+  '/edit/:id',
   verifyToken,
-  imageUpload.single("image"),
+  imageUpload.single('image'),
   UserController.editUser
-);
+)
 
-module.exports = router;
+module.exports = router

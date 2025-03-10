@@ -1,8 +1,8 @@
-const mongoose = require("../db/conn");
-const { Schema } = mongoose;
+const mongoose = require('../db/conn')
+const { Schema } = mongoose
 
 const Pet = mongoose.model(
-  "Pet",
+  'Pet',
   new Schema(
     {
       name: {
@@ -34,6 +34,6 @@ const Pet = mongoose.model(
 
     { timestamps: true }
   )
-);
+)
 
-module.exports = Pet;
+module.exports = Pet
